@@ -190,6 +190,7 @@
                         <outlet property="descriptionTextField" destination="BNw-Vq-Mkp" id="yGH-7o-5Yl"/>
                         <outlet property="emojiTextField" destination="wPZ-Fh-bLx" id="yoS-XT-W5j"/>
                         <outlet property="nameTextField" destination="ZZ4-lp-IFe" id="4jo-d4-77b"/>
+                        <outlet property="saveButton" destination="hvx-Fy-vOO" id="EE7-RC-sVE"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fYB-GW-Z7Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
