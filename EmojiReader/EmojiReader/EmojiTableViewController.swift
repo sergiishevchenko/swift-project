@@ -27,6 +27,16 @@ class EmojiTableViewController: UITableViewController {
         self.navigationItem.leftBarButtonItem = self.editButtonItem
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
+    
+    @IBAction func unwindSegue(segue: UIStoryboardSegue) {
+        guard segue.identifier == "saveSegue" else { return }
+        let sourseVC = segue.source as! NewEmojiTableViewController
+        let emoji = sourseVC.emoji
+        let newIndexPath = IndexPath(row: objects.count, section: 0)
+        objects.append(emoji)
+        
+        tableView.insertRows(at: [newIndexPath], with: .fade)
+    }
 
     // MARK: - Table view data source
 
