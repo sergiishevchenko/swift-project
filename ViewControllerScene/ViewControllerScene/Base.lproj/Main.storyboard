@@ -15,47 +15,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nxl-Sc-Mvr">
-                                <rect key="frame" x="100" y="726" width="200" height="48"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Sg-Lm-5Fu">
+                                <rect key="frame" x="98" y="248" width="209" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="KNZ-JT-fC1" userLabel="height = 60"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nxl-Sc-Mvr">
+                                <rect key="frame" x="107" y="741" width="200" height="48"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="pressedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="89d-zG-QEF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gd9-mV-4ps">
-                                <rect key="frame" x="100" y="645" width="200" height="48"/>
-                                <state key="normal" title="Action 2"/>
-                                <connections>
-                                    <action selector="pressedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hra-LF-Exi"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rig-UM-GwA">
-                                <rect key="frame" x="100" y="555" width="200" height="48"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rig-UM-GwA">
+                                <rect key="frame" x="107" y="573" width="200" height="48"/>
                                 <state key="normal" title="Action 1"/>
                                 <connections>
-                                    <action selector="pressedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DiF-lY-Ul1"/>
+                                    <action selector="pressedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FEO-Rb-oxF"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Sg-Lm-5Fu">
-                                <rect key="frame" x="100" y="248" width="215" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gd9-mV-4ps">
+                                <rect key="frame" x="107" y="657" width="200" height="48"/>
+                                <state key="normal" title="Action 2"/>
+                                <connections>
+                                    <action selector="pressedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ceb-vj-No8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="rig-UM-GwA" firstAttribute="width" secondItem="gd9-mV-4ps" secondAttribute="width" id="3PO-y6-noD"/>
-                            <constraint firstItem="Nxl-Sc-Mvr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ROO-Nl-iT5"/>
-                            <constraint firstItem="Nxl-Sc-Mvr" firstAttribute="top" secondItem="gd9-mV-4ps" secondAttribute="bottom" constant="33" id="aAA-dg-7Sr"/>
-                            <constraint firstItem="gd9-mV-4ps" firstAttribute="width" secondItem="Nxl-Sc-Mvr" secondAttribute="width" multiplier="4.34783" id="eAe-Wx-Hup"/>
+                            <constraint firstItem="gd9-mV-4ps" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="4yZ-xJ-mKw"/>
+                            <constraint firstItem="rig-UM-GwA" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="5lv-nm-Xgh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rig-UM-GwA" secondAttribute="bottom" constant="241" id="682-c1-wnn"/>
+                            <constraint firstItem="rig-UM-GwA" firstAttribute="centerX" secondItem="Nxl-Sc-Mvr" secondAttribute="centerX" id="COP-d1-BrP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2Sg-Lm-5Fu" secondAttribute="bottom" constant="552" id="Ill-JI-c1i"/>
+                            <constraint firstItem="Nxl-Sc-Mvr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Obp-8w-w7t"/>
+                            <constraint firstItem="2Sg-Lm-5Fu" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="VRf-pv-IUE"/>
+                            <constraint firstItem="rig-UM-GwA" firstAttribute="width" secondItem="gd9-mV-4ps" secondAttribute="width" id="afz-gk-YCH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Nxl-Sc-Mvr" secondAttribute="bottom" constant="73" id="dsY-cN-V3Y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gd9-mV-4ps" secondAttribute="bottom" constant="166" id="e5e-Nq-fdC"/>
+                            <constraint firstItem="gd9-mV-4ps" firstAttribute="width" secondItem="Nxl-Sc-Mvr" secondAttribute="width" id="fnq-te-dd3"/>
+                            <constraint firstItem="rig-UM-GwA" firstAttribute="width" secondItem="Nxl-Sc-Mvr" secondAttribute="width" id="nlj-5C-rfQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="button" destination="Nxl-Sc-Mvr" id="IXw-0B-0vx"/>
                         <outlet property="label" destination="2Sg-Lm-5Fu" id="pyX-kD-2V4"/>
+                        <outletCollection property="actionButtons" destination="rig-UM-GwA" collectionClass="NSMutableArray" id="lga-ZS-Cju"/>
+                        <outletCollection property="actionButtons" destination="gd9-mV-4ps" collectionClass="NSMutableArray" id="PsR-h1-vIz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
